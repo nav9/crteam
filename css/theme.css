@@ -1,0 +1,31 @@
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+fieldset {
+    border: 0;
+}
+
+.browserupgrade {
+    background: #ccc;
+    color: #000;
+}

@@ -1,10 +1,13 @@
+@font-face { font-family: RobotoCondensed-Regular; src: url('../font/RobotoCondensed-Regular.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('../font/Roboto-Regular.ttf'); }
+
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px Arial, Helvetica, Helvetica Neue;
 }
 ::-moz-selection {
     background: #b3d4fc;

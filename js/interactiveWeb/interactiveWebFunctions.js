@@ -1,5 +1,5 @@
-var BROWSER_AREA_COMPENSATION = 50;//in pixels
-var pattern = (new Trianglify).generate(document.body.clientWidth + BROWSER_AREA_COMPENSATION, document.body.clientHeight + BROWSER_AREA_COMPENSATION);
+var BROWSER_AREA_COMPENSATION = 20;//in pixels
+var pattern = (new Trianglify).generate(document.body.clientWidth + BROWSER_AREA_COMPENSATION, document.body.clientHeight);
 $("body").css("background-image", pattern.dataUrl);//draws the triangles in the background
 
 $window = $(window);

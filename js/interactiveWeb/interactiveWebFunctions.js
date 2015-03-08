@@ -52,7 +52,7 @@ experience = {page: null, resize: null, init: function ()
             c.strokeStyle = d;
             //refreshes the page so that the abstract triangles are redrawn on
             //the entire screen
-            location.reload();
+            //location.reload();
         };
         $(window).on("resize", experience.resize);
 

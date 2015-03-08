@@ -56,6 +56,10 @@ Enjoy our resources!
 ============ Effects on image hover ===============
 Alessio Atzeni for Codrops
 
+============ Envelope for contact form ===============
+
+From www.jqueryscript.net, under the MIT license: http://opensource.org/licenses/MIT
+
 
 ============ d3.js ===============
 

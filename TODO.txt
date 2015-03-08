@@ -4,3 +4,4 @@
 * Entire website to be checked with a Xenu linkchecker before release
 * CSS could be minified and/or obfuscated before release (optional)
 * Trianglify requires a refresh when browser is resized
+* Padding/margin required on right side for input fields of the contact form (envelope paper)

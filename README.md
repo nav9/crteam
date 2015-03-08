@@ -3,7 +3,7 @@ CRTeam's very own website. Of the volunteers, by the volunteers and for everyone
 
 
 Attribution:
-Probably the interactive web was created by the following person:
+Probably the interactive web (experience) was created by the following person:
           (    (    (                             
      (    )\ ) )\ ) )\ )           )          (   
      )\  (()/((()/((()/(     )  ( /(          )\  
@@ -17,9 +17,16 @@ Probably the interactive web was created by the following person:
   
     @ 2 0 1 4 ~ ∞   |   J o r g e   E p u ñ a n
 
+Jorge Epunan has released a lot of projects under the MIT license, so this code
+is also assumed to be under MIT: http://opensource.org/licenses/MIT
 With no contact details provided, no specific permissions were obtained for the 
 reuse of the code. But due attribution is hereby given for an awesome piece of
 work. If any objections, kindly write to navinipe at gmail dot com.
 
 The code of the interactive web is being used for a non-profit purpose and only
 for the sake of aesthetics.
+
+========================================================
+ Background patterns are downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ ========================================================

@@ -1,4 +1,4 @@
-var BROWSER_AREA_COMPENSATION = 20;//in pixels
+var BROWSER_AREA_COMPENSATION = 0;//in pixels
 var pattern = (new Trianglify).generate(document.body.clientWidth + BROWSER_AREA_COMPENSATION, document.body.clientHeight);
 $("body").css("background-image", pattern.dataUrl);//draws the triangles in the background
 
@@ -39,7 +39,7 @@ experience = {page: null, resize: null, init: function ()
         var c = this.canvas.getContext("2d"), d = "#fff";
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
-        //this.canvas.style.display = "block";
+
         c.fillStyle = d;
         c.lineWidth = .1;
         c.strokeStyle = d;
@@ -50,6 +50,9 @@ experience = {page: null, resize: null, init: function ()
             c.fillStyle = d;
             c.lineWidth = .1;
             c.strokeStyle = d;
+            //refreshes the page so that the abstract triangles are redrawn on
+            //the entire screen
+            location.reload();
         };
         $(window).on("resize", experience.resize);
 

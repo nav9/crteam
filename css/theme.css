@@ -154,15 +154,21 @@ body
     padding: 50px 30px 50px 30px;
 }
 
-/*----- Polls style -----*/
-#pollresult .axis path ,
-#pollresult .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+/*------ rotation for images ------*/
+.rotateit {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
 }
-#pollresult text {
-  font: 10px sans-serif;
+
+.rotateit:hover {
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -ms-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+  transform:rotate(360deg);
 }
 
 

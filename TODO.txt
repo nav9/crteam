@@ -1,2 +1,6 @@
 * Website to be tested with different browsers to see if it shows the message of "javascript not supported" or "browser not supported".
 * Website to be tested under different screen resolutions and resizing.
+* Heading fonts to be made uniform on all pages
+* Entire website to be checked with a Xenu linkchecker before release
+* CSS could be minified and/or obfuscated before release (optional)
+* Trianglify requires a refresh when browser is resized

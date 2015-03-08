@@ -1,0 +1,10 @@
+/*----- Polls style -----*/
+#pollresult .axis path ,
+#pollresult .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+#pollresult text {
+  font: 10px sans-serif;
+}

@@ -21,7 +21,6 @@ body
 {
     font-family: 'RobotoCondensed-Regular';/*Default font style that gets applied to all text*/
     color: #555;/*Default font color that will get applied to all text*/
-    background-image: url(../img/neonWave.jpg);
     background-repeat: no-repeat;
 
     -webkit-background-size: cover;

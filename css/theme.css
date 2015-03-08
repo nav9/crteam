@@ -1,16 +1,54 @@
+/*---------- Including custom fonts ----------*/
+/* These fonts have to be present in the local directory */
 @font-face { font-family: RobotoCondensed-Regular; src: url('../font/RobotoCondensed-Regular.ttf'); }
 @font-face { font-family: Roboto-Regular; src: url('../font/Roboto-Regular.ttf'); }
 @font-face { font-family: Roboto-Black; src: url('../font/Roboto-Black.ttf'); }
+/*------- apply to all elements --------*/
+* 
+{
+    margin: 0;
+    padding: 0;    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 html 
 {
 }
+
 body 
 {
     background-image: url(img/paper.png);
     background-repeat:repeat;
+    background: red;
 }
 
+#page-wrap 
+{
+    background: white;
+    min-width: 780px;
+    max-width: 1260px;
+    margin: 10px auto;
+}
+#page-wrap #inside 
+{
+    margin: 10px 10px 0px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*--------- Main Menu ----------*/
+#mainmenu 
+{
+    position: absolute;
+    top: 0px;/*adding a left: 0px; somehow made elements go outside screen when resized*/
+    width: 100%;
+    padding: 4px 0px 0px 20px;
+    min-width: 800px;
+    height: 36px;
+    background: #000;
+    opacity: 0.7;
+}
 #mainmenu li:hover a 
 {
     color: #fff;
@@ -42,17 +80,8 @@ body
     text-transform:uppercase;
     letter-spacing: 1px;
 }
-#mainmenu 
-{
-    position: absolute;
-    top: 0px;/*adding a left: 0px; somehow made elements go outside screen when resized*/
-    width: 100%;
-    min-width: 800px;
-    height: 36px;
-    background: #000;
-    opacity: 0.7;
-}
-#joinmenu
+
+#joinmenu /* shows the join link in a different colour*/
 {
     display: inline-block;
     font-size: 11px;
@@ -62,6 +91,7 @@ body
     letter-spacing: 1px;    
     font-weight: bold;
 }
+/*-------- Logos --------*/
 #teamLogo
 {
     width: 40px;
@@ -69,20 +99,23 @@ body
     float: right;
     margin: 4px 20px 0px 0px;
 }
-
-
-
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+/*------- Homepage -------*/
+.splash h1
+{
+    font-family:'RobotoCondensed-Regular';
+    position:absolute;
+    font-size:2rem;
+    line-height:2rem;
+    text-transform:uppercase;
+    color:#fff;
+    top:45%;
+    left:10%;
+    width:80%;
+    text-shadow:rgba(0,0,0,0.5) 1px 1px 2px
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
+/*-------- Boilerplate code ----------*/
 hr {
     border: 0;
     border-top: 1px solid #ccc;
@@ -96,3 +129,43 @@ fieldset {
     background: #ccc;
     color: #000;
 }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+.clearFloats
+{
+    clear: both;
+}    
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+

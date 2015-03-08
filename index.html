@@ -22,20 +22,21 @@
         <script src="js/interactiveWeb/jquery_002.js"></script>
         <script src="js/interactiveWeb/trianglify.js"></script>
     </head>
-    
-    
+
+
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <article class="splash" style="height: 400px; min-height: 657px">	
+        <div id="page-wrap">
+            <div id="inside">
+                <article id="splashScreen" class="splash" style="height: 400px; min-height: 400px">	
 
-            <div>
-                <div id="experience">
-                    <canvas id="lines"></canvas>
-                    <h1>Welcome to CRTeam's website</h1>    
-                </div>    
+                    <div id="experience">
+                        <canvas id="lines"></canvas>
+                        <h1>Welcome to CRTeam's website</h1>    
+                    </div>    
                     <div id="mainmenu">
                         <ul>
                             <li class='active'><a href='index.html'>Home</a></li>
@@ -47,12 +48,16 @@
                         </ul>
                         <img id="teamLogo" src="img/invertedCRLogo.png" alt="team logo">
                     </div>
+
+                </article>
+                <!-- script to be placed here since the canvas has to get created before
+                the script can be activated -->
+                <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
             </div>
 
-        </article>
+            <div class="clearFloats"></div>
 
-        <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
-
+        </div>
 
     </body>
 </html>

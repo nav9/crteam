@@ -1,6 +1,6 @@
 var BROWSER_AREA_COMPENSATION = 0;//in pixels
 var pattern = (new Trianglify).generate(document.body.clientWidth + BROWSER_AREA_COMPENSATION, document.body.clientHeight);
-$("body").css("background-image", pattern.dataUrl);//draws the triangles in the background
+$("#splashScreen").css("background-image", pattern.dataUrl);//draws the triangles in the background
 
 $window = $(window);
 experience = {page: null, resize: null, init: function ()

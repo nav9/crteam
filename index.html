@@ -34,11 +34,11 @@
             <div id="mainmenu">
                 <ul>
                     <li class='active'><a href='index.html'>Home</a></li>
-                    <li><a href='#'>Team</a></li>
-                    <li><a href='#'>Mumbai</a></li>
-                    <li><a href='#'>Bangalore</a></li>
-                    <li><a href='#'>S-Help</a></li>
-                    <li><a id="joinmenu" href='#'>Join</a></li>
+                    <li><a href='team.html'>Team</a></li>
+                    <li><a href='mumbai.html'>Mumbai</a></li>
+                    <li><a href='bangalore.html'>Bangalore</a></li>
+                    <li><a href='shelp.html'>S-Help</a></li>
+                    <li><a id="joinmenu" href='join.html'>Join</a></li>
                 </ul>
                 <img id="teamLogo" src="img/invertedCRLogo.png" alt="team logo">
             </div>          
@@ -49,19 +49,59 @@
                     <canvas id="lines"></canvas>
                     <h1>Welcome to CRTeam's website</h1>    
                 </div>    
+                <!-- script to be placed here since the canvas has to get created before
+                the script for interactive web can be activated -->
+                <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
+            </article>            
+            <div id="suggestions" class="fullWidthDivAutoSpacing">
+                <h6>SUGGESTIONS WELCOME</h6>
+                Also do tell us how you'd be offering a helping hand
+                <br>
+                <br>
+                <form>
+                    <div class="row">
+                        <div class="three columns">
+                            <label for="exampleEmailInput">Your email</label>
+                            <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email">
+                        </div>
+                        <div class="three columns">
+                            <label for="exampleRecipientInput">Reason for contacting</label>
+                            <select class="u-full-width" id="exampleRecipientInput">
+                                <option value="Option 1">Questions</option>
+                                <option value="Option 2">Admiration</option>
+                                <option value="Option 3">Volunteering suggestion</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="exampleMessage">Message</label>
+                    <textarea class="u-full-width" placeholder="Hi CRTeam …" id="exampleMessage"></textarea>
+                    <label class="example-send-yourself-copy">
+                        <input type="checkbox">
+                        <span class="label-body">Send a copy to yourself</span>
+                    </label>
+                    <input class="button-primary" value="Submit" type="submit">
+                </form>
 
-            </article>
+                <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
-            <article style="background: grey">	
-                <h1>Welcome to CRTeam's website</h1>
-
-            </article>                
-
-
-            <!-- script to be placed here since the canvas has to get created before
-            the script can be activated -->
-            <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
-
+                <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+            </div>
+            <hr>
+            <div id="testimonials" class="fullWidthDivAutoSpacing">
+                <h6>TESTIMONIALS</h6>
+            </div>
+            <hr>
+            <div id="polls" class="fullWidthDivAutoSpacing">
+                <h6>POLLS</h6>
+            </div>
+            <hr>
+            <div id="quotefortheday" class="fullWidthDivAutoSpacing">
+                <h6>QUOTE FOR THE DAY</h6>
+                <div class="quotation">
+                    They who create CRTeam's website shall be blessed with prosperity.<br>
+                    Try using a slightly more stylish font for this.
+                </div>
+            </div>
 
             <div class="clearFloats"></div>
 

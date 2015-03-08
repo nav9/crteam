@@ -78,7 +78,7 @@ body
 {
     min-width: 780px;
     max-width: 1260px;
-    height: 36px;
+    height: 40px;
     background: #000;
 }
 #mainmenu li:hover a 
@@ -103,7 +103,7 @@ body
 }
 #mainmenu ul 
 {
-    margin: 9px 0px 0px 20px;
+    margin: 11px 0px 0px 20px;
     display: inline-block;
     font-size: 11px;
     font-family: 'RobotoCondensed-Regular';
@@ -128,7 +128,7 @@ body
     width: 40px;
     height: 25px;
     float: right;
-    margin: 4px 20px 0px 0px;
+    margin: 6px 20px 0px 0px;
 }
 /*------- Homepage -------*/
 #splashScreen

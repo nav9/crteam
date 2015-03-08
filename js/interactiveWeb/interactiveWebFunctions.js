@@ -37,16 +37,17 @@ experience = {page: null, resize: null, init: function ()
         }
         this.canvas = document.querySelector("canvas");
         var c = this.canvas.getContext("2d"), d = "#fff";
-        this.canvas.width = window.innerWidth;
-        this.canvas.height = window.innerHeight;
+        this.canvas.width = $('#splashScreen').width();//window.innerWidth;
+        this.canvas.height = $('#splashScreen').height();//window.innerHeight;
 
         c.fillStyle = d;
         c.lineWidth = .1;
         c.strokeStyle = d;
         this.resize = function ()
         {
-            experience.canvas.width = window.innerWidth;
-            experience.canvas.height = window.innerHeight;
+            
+            experience.canvas.width = $('#splashScreen').width();//window.innerWidth;
+            experience.canvas.height = $('#splashScreen').height();//window.innerHeight;
             c.fillStyle = d;
             c.lineWidth = .1;
             c.strokeStyle = d;

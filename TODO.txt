@@ -1,0 +1,2 @@
+* Website to be tested with different browsers to see if it shows the message of "javascript not supported" or "browser not supported".
+* Website to be tested under different screen resolutions and resizing.

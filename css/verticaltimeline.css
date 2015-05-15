@@ -1,3 +1,6 @@
+@font-face { font-family: RobotoCondensed-Regular; src: url('../font/RobotoCondensed-Regular.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('../font/Roboto-Regular.ttf'); }
+@font-face { font-family: Roboto-Black; src: url('../font/Roboto-Black.ttf'); }
 /* -------------------------------- 
 
 Primary style
@@ -6,24 +9,19 @@ Primary style
 #timelineHolder
 {
   font-size: 100%;
-  font-family: "Droid Serif", serif;
+  font-family: 'Roboto-Regular';
   color: #7f8c97;
-  background-color: #eee;
+  background-color: #fff;
   }
 
 a {
   color: #acb7c0;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'RobotoCondensed-Regular', sans-serif;
 }
 
 img {
   max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
 }
 
 /* -------------------------------- 
@@ -234,7 +232,7 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: #eee;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
@@ -248,29 +246,33 @@ header h1 {
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 12px;
+  background: white;
 }
+
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
+
 .cd-timeline-content p {
-  margin: 1em 0;
+  background:#eee;
+  margin: 10px 0px 10px 0px;
   line-height: 1.6;
 }
 .cd-timeline-content .cd-read-more {
   float: right;
-  padding: .8em 1em;
+  padding: .5em 2em;/*for the button*/
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
+  letter-spacing: 0.2em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
   float: left;
-  padding: .8em 0;
+  padding: .5em 0.8em;
   opacity: .7;
 }
 .cd-timeline-content::before {
@@ -287,10 +289,13 @@ header h1 {
   .cd-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
+    letter-spacing: 1px;
   }
   .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 14px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: 1px;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
@@ -320,6 +325,7 @@ header h1 {
     font-size: 16px;
     font-size: 1rem;
   }
+  
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
   }

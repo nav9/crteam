@@ -8,3 +8,9 @@
 #pollresult text {
   font: 10px sans-serif;
 }
+
+.d3GraphControls
+{
+    display: inline-block;
+    margin: 20px 0px 0px 20px;
+}

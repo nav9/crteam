@@ -1,25 +1,24 @@
-
-body, div, h1,h2, form, fieldset, input, textarea, footer,p {
-    margin: 0; padding: 0; border: 0; outline: none;
-}
-
-
-@font-face {
-    font-family: 'YanoneKaffeesatzRegular';
-    src: url('yanonekaffeesatz-regular-webfont.eot');
-    src: url('yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('yanonekaffeesatz-regular-webfont.woff') format('woff'),
-        url('yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
-        url('yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@font-face { font-family: Roboto-Black; src: url('../font/Roboto-Black.ttf'); }
 
 p {text-shadow:0 1px 0 #fff; font-size:24px;}
-#wrap {width:530px; margin:20px auto 0; height:1000px;}
-h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }
 
+#wrap 
+{
+    width:530px; 
+    margin:20px auto 0; 
+    height:600px;
+}
+
+h1 {margin-bottom:20px; /*text-align:center;*/ font-size:48px; text-shadow:0 1px 0 #ede8d9; }
+
+#buttonCSS
+{
+    text-align: center;
+}
+input[type="radio"]
+{
+    margin: 0px 10px 10px 10px;
+}
 
 #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;
              -webkit-transition: all 1s ease-in-out .3s;
@@ -42,19 +41,28 @@ h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #e
 #form_wrap:hover {height:776px;top:-200px;}
 
 
-form {background:#f7f2ec url('../img/contactForm/letter_bg.png'); 
-      position:relative;top:200px;overflow:hidden;
-      height:200px;width:400px;margin:0px auto;padding:20px; 
-      border: 1px solid #fff;
-      border-radius: 3px; 
-      -moz-border-radius: 3px; -webkit-border-radius: 3px;
-      box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
-      -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
-      -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
-      -webkit-transition: all 1s ease-in-out .3s;
-      -moz-transition: all 1s ease-in-out .3s;
-      -o-transition: all 1s ease-in-out .3s;
-      transition: all 1s ease-in-out .3s;}
+form {
+    /*text-align: center;*/
+    background:#f7f2ec url('../img/contactForm/letter_bg.png'); 
+    position:relative;
+    top:200px;
+    overflow:hidden;
+    height:200px;
+    width:400px;
+    margin:0px auto;
+    padding:20px; 
+    border: 1px solid #fff;
+    border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+    -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+    -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+    -webkit-transition: all 1s ease-in-out .3s;
+    -moz-transition: all 1s ease-in-out .3s;
+    -o-transition: all 1s ease-in-out .3s;
+    transition: all 1s ease-in-out .3s;
+}
 
 
 #form_wrap:hover form {height:530px;}
@@ -83,12 +91,18 @@ textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
 
 #form_wrap input[type=submit] {
     position:relative; 
-    font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;
-    width:100%; text-align:center;opacity:0;
+    font-size:24px; 
+    color: #7c7873;
+    text-shadow:0 1px 0 #fff;
+    width:100%; 
+    text-align:center;
+    opacity:0;
     background:none;
     cursor: pointer;
     border: none;
-    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
     -webkit-transition: opacity .6s ease-in-out 0s;
     -moz-transition: opacity .6s ease-in-out 0s;
     -o-transition: opacity .6s ease-in-out 0s;
@@ -103,3 +117,25 @@ textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
                                      transition: opacity .5s ease-in-out 1.3s;}
 
 #form_wrap:hover input:hover[type=submit] {color:#435c70;border:none;}
+
+.even{
+margin: 5px 15px 8px 15px;
+border-radius: 5px;
+background-color:#E5E5DD;
+}
+
+.odd{
+margin: 5px 15px 8px 15px;
+border-radius: 5px;
+background-color: #FBFBF9
+}
+
+p{
+display:block;
+padding:2px 2px 2px 2px;
+}
+
+.mailto
+{
+    font-size: 18px;
+}

@@ -1,1 +1,14 @@
 /nbproject/private/
+<<<<<<< HEAD
+*.rar
+*.zip
+*.ini
+*.db
+=======
+*.ini
+*.db
+*.zip
+*.rar
+*.lnk
+>>>>>>> development
+/gallery

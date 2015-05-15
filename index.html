@@ -1,126 +1,80 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>CRTeam</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        
-        <!--______________ CSS ______________-->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/polls.css">
-        
-        <!--______________ JavaScript ______________-->
-        <script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/lib/d3.v3.js"></script>
-        <script src="js/interactiveWeb/jquery_002.js"></script>
-        <script src="js/interactiveWeb/trianglify.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CRTeam Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--______________ CSS ______________-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/caveman.css">
+
+    <!--______________ JavaScript ______________-->
+    <!--<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+    <script src="js/lib/d3.v3.js"></script>
+    <script src="js/interactiveWeb/interactiveWebsJQuery.js"></script>
+    <script src="js/interactiveWeb/trianglify.js"></script>
+    <script src="js/updateBrowserNotification.js"></script>
+
+</head>
 
 
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<body>
+    <!--[if lt IE 10]>
+             <div class="browserupgrade">
+                         <img id="caveman" src="img/caveman.jpg" alt="caveman">
+         </div>
+ 
+         <p class="browserupgrade">
+                 <br>
+                 Oops!!! You are using an <strong>outdated</strong> browser. 
+                 <br>
+                 Please install a <a href="http://browsehappy.com/">more modern browser</a> right away!
+         <br>
+         <br>		
+         </p>
+         <p class="additionalMessage">Using an outdated browser is also a security risk. Please upgrade and return to CRTeam's website. Have a nice day!!! :-)</p>
+ 
+         <![endif]-->
 
+    <div id="page-wrap">
+        <div id="mainmenu">
+            <ul>
+                <li class='active'><a href='index.html'>Home</a></li>
+                <li><a href='mumbai.html'>Mumbai</a></li>
+                <li><a href='bangalore.html'>Bangalore</a></li>
+                <li><a href='delhi.html'>Delhi</a></li>
+                <li><a href='shelp.html'>S-Help</a></li>
+                <li><a href='team.html'>Team</a></li>
+                <li><a href='crheroes.html'>CR Heroes</a></li>
+                <li><a id="interactmenu" href='interact.html'>Interact</a></li>
+            </ul>
+            <a href='index.html'><img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo"></a>
+        </div>          
 
-        <div id="page-wrap">
-            <div id="mainmenu">
-                <ul>
-                    <li class='active'><a href='index.html'>Home</a></li>
-                    <li><a href='team.html'>Team</a></li>
-                    <li><a href='mumbai.html'>Mumbai</a></li>
-                    <li><a href='bangalore.html'>Bangalore</a></li>
-                    <li><a href='shelp.html'>S-Help</a></li>
-                    <li><a id="joinmenu" href='join.html'>Join</a></li>
-                </ul>
-                <img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo">
-            </div>          
+        <article id="splashScreen" class="splash">	
 
-            <article id="splashScreen" class="splash">	
-
-                <div id="experience">
-                    <canvas id="lines"></canvas>
-                    <h1>Welcome to CRTeam's website</h1>    
-                </div>    
-                <!-- script to be placed here since the canvas has to get created before
-                the script for interactive web can be activated -->
-                <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
-            </article>            
-            <div id="suggestions" class="fullWidthDivAutoSpacing">
-                <h6>SUGGESTIONS WELCOME</h6>
-                Also do tell us how you'd be offering a helping hand
-                <br>
-                <br>
-                <form>
-                    <div class="row">
-                        <div class="three columns">
-                            <label for="exampleEmailInput">Your email</label>
-                            <input class="u-full-width" placeholder="test@mailbox.com" id="exampleEmailInput" type="email">
-                        </div>
-                        <div class="three columns">
-                            <label for="exampleRecipientInput">Reason for contacting</label>
-                            <select class="u-full-width" id="exampleRecipientInput">
-                                <option value="Option 1">Questions</option>
-                                <option value="Option 2">Admiration</option>
-                                <option value="Option 3">Volunteering suggestion</option>
-                            </select>
-                        </div>
-                    </div>
-                    <label for="exampleMessage">Message</label>
-                    <textarea class="u-full-width" placeholder="Hi CRTeam …" id="exampleMessage"></textarea>
-                    <label class="example-send-yourself-copy">
-                        <input type="checkbox">
-                        <span class="label-body">Send a copy to yourself</span>
-                    </label>
-                    <input class="button-primary" value="Submit" type="submit">
-                </form>
-
-                <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-                <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-            </div>
-            <hr>
-            <div id="testimonials" class="fullWidthDivAutoSpacing">
-                <h6>TESTIMONIALS</h6>
-                <p>Navin Ipe</p>
-                <div class="quotation">
-                    CRTeam has done some good work for society, and will do far better with improved planning, a true sense of responsibility, the determination to do better and more helping hands.
+            <div id="experience">
+                <canvas id="lines"></canvas>
+                <h1>Welcome to CRTeam's website</h1>
+                <!--<div id="talkbubble"></div>-->
+                <div id="quote">
+                    <p>
+                    Never doubt that a small group of thoughtful, committed citizens can change the world. Indeed, it is the only thing that ever has - Margaret Mead 
+                    </p>
                 </div>
-            </div>
-            <hr>
-            <div id="polls" class="fullWidthDivAutoSpacing">
-                <h6>POLLS</h6>
+            </div>    
+            <!-- script to be placed here since the canvas has to get created before
+            the script for interactive web can be activated -->
+            <script src="js/interactiveWeb/interactiveWebFunctions.js"></script>
+        </article>
 
-                <div id="pollresult">
-                    <form>
-                        <label><input type="radio" name="mode" value="grouped"> Grouped</label>
-                        <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
-                    </form>  
-                    <script src="js/polls.js"></script>  
-                </div>  
+        <div class="clearFloats"></div>
 
+    </div><!--page wrap-->
 
-            </div>
-            <hr>
-            <div id="quotefortheday" class="fullWidthDivAutoSpacing">
-                <h6>QUOTE FOR THE DAY</h6>
-                <div class="quotation">
-                    They who create CRTeam's website shall be blessed with prosperity.<br>
-                    Try using a slightly more stylish font for this.
-                </div>
-            </div>
-
-            <div class="clearFloats"></div>
-
-        </div>
-
-    </body>
+</body>
 </html>

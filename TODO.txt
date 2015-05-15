@@ -1,7 +1,48 @@
-* Website to be tested with different browsers to see if it shows the message of "javascript not supported" or "browser not supported".
-* Website to be tested under different screen resolutions and resizing.
-* Heading fonts to be made uniform on all pages
-* Entire website to be checked with a Xenu linkchecker before release
-* CSS could be minified and/or obfuscated before release (optional)
+Emergency:
+-----------------------------------------------------
+nothing
+
+
+Important:
+-----------------------------------------------------
+* Team to become familiar with Skeleton CSS and existing CSS Boilerplate
+* Gallery can be changed to a page full of thumbnail views (actual thumbnails not required. The image width and height can be altered) which when clicked, shows the image in a lightbox
+* A main-menu script can generate the main menu instead of hard-coding it into every page.
+* S-Helping section to be created with JSP, MySQL (or Neo4J or MongoDB) and JQuery
+
+
+Somewhat-Important:
+-----------------------------------------------------
+* Team page to use skeleton for displaying photos
+* Polls section to be initiated. Current poll graph goes outside website display space on browser resize
+* Feedback/Testimonial section to be initiated
+* The envelope on interact page blocks menu links. CRTeam Delhi mailto link is not clickable.
+* Add a section in the interact page where we show people what ideas we have received from them and what has been done about it (this is a first step. The next step is to have a facility to allow them to enter their suggestions and submit it)
+
+
+Minor:
+-----------------------------------------------------
+* Heading fonts and text fonts in general to be made uniform on all pages
 * Trianglify requires a refresh when browser is resized
-* Padding/margin required on right side for input fields of the contact form (envelope paper)
+* favicon of tomcat to be replaced with CRTeam favicon
+* At least one Mumbai CRTeam member to be given access to main server 172.20.110.82
+* CSS class names like fullWidthDivAutoSpacing to be changed to better names
+* Migrate the "img" folder into "gallery"
+
+
+
+TODO's before releasing website for public viewing:
+-----------------------------------------------------
+* Website to be tested with different browsers to see if it shows the message of "javascript not supported" or "browser not supported".
+* Website to be tested under different screen resolutions, zooming and resizing.
+* Entire website to be checked with a Xenu linkchecker
+* CSS could be minified and/or obfuscated before release (optional)
+* Check if timelines work (the primitive Git UI changes LF to CRLF which cause the timeline not to function)
+
+
+Wishlist:
+-----------------------------------------------------
+* To have a synchronized server in Bangalore and/or Delhi so that content loading won't take time
+* To put points of this page onto a professional tracker like Apache Bloodhound, Trac, Bugzilla or Mantis.
+* To have a separate blog page for volunteers to share their thoughts
+* To have a forum where volunteers can discuss and plan (MyBB or PHPBB)

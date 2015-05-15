@@ -1,92 +1,221 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>CRTeam</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <!--______________ CSS ______________-->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/textOnImageHover.css"> <!-- Resource style -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Team</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--______________ CSS ______________-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/teamPage.css"> <!-- Resource style -->
 
-        <!--______________ JavaScript ______________-->
-        <script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/lib/d3.v3.js"></script>
-    </head>
+    <!--______________ JavaScript ______________-->
+    <script src="js/updateBrowserNotification.js"></script>        
+    <!--<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+    <!--<script src="js/lib/d3.v3.js"></script>-->
+</head>
 
 
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<body>
 
-
-        <div id="page-wrap">
-            <div id="mainmenu">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li class='active'><a href='team.html'>Team</a></li>
-                    <li><a href='mumbai.html'>Mumbai</a></li>
-                    <li><a href='bangalore.html'>Bangalore</a></li>
-                    <li><a href='shelp.html'>S-Help</a></li>
-                    <li><a id="joinmenu" href='join.html'>Join</a></li>
-                </ul>
-                <img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo">
-            </div>          
-
-
-
-            <div>
-                <div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/mahendranarang.jpg">
-                        <div class="mask">
-                            <h2>Mahendra Narang</h2>
-                            <p>The Prince Charming of the team. Loves Ekata Kapoor dialogues</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/navinipe.jpg">
-                        <div class="mask">
-                            <h2>Navin Ipe</h2>
-                            <p>Knowledgeable on volunteering, so gives everyone lectures on volunteering responsibly</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/noPhoto.jpg">
-                        <div class="mask">
-                            <h2>XYZ</h2>
-                            <p>Blah blah</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/noPhoto.jpg">
-                        <div class="mask">
-                            <h2>ABC</h2>
-                            <p>Blah blah</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="clearFloats"></div>
-
+    <div id="page-wrap">
+        <div id="mainmenu">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='mumbai.html'>Mumbai</a></li>
+                <li><a href='bangalore.html'>Bangalore</a></li>
+                <li><a href='delhi.html'>Delhi</a></li>
+                <li><a href='shelp.html'>S-Help</a></li>
+                <li class='active'><a href='team.html'>Team</a></li>
+                <li><a href='crheroes.html'>CR Heroes</a></li>
+                <li><a id="interactmenu" href='interact.html'>Interact</a></li>
+            </ul>
+            <a href='index.html'><img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo"></a>
         </div>
 
-    </body>
+        <div id="teamHolder">
+
+            <div class="fullWidthDivAutoSpacing">
+
+                <h5>Mumbai</h5>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/m.jpg" alt="M">
+                    <div class="mask">
+                        <h2>M</h2>
+                        <p>The Binder and Think Tank of the team</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/K.jpg" alt="K">
+                    <div class="mask">
+                        <h2>K</h2>
+                        <p>The Big Brother of the team, he supports and encourages</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/A.jpg" alt="A">
+                    <div class="mask">
+                        <h2>A</h2>
+                        <p>The Smiling Shy Lady who charms with her Simplicity</p>
+                    </div>
+                </div>
+
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/Y.jpg" alt="Y">
+                    <div class="mask">
+                        <h2>Y</h2>
+                        <p>The soft spoken and loud thinker, she is Serious about all that she does</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/E.jpg" alt="E">
+                    <div class="mask">
+                        <h2>E</h2>
+                        <p>The Simple Sweet Heart with a responsible head</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/D.jpg" alt="D">
+                    <div class="mask">
+                        <h2>D</h2>
+                        <p>The Enthusiastic participant with a definite and positive attitude</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/S.jpg" alt="S">
+                    <div class="mask">
+                        <h2>S</h2>
+                        <p>The Jovial one with a Caring Heart</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/M.jpg" alt="M">
+                    <div class="mask">
+                        <h2>M</h2>
+                        <p>The Silent Patient Performer who works Diligently </p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/C.jpg" alt="C">
+                    <div class="mask">
+                        <h2>C</h2>
+                        <p>The Doer, assign a task and it’s done</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/A.jpg" alt="A">
+                    <div class="mask">
+                        <h2>A</h2>
+                        <p>The Sombre and Bubbly one who Does what she Believes In</p>
+                    </div>
+                </div>
+
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/A.jpg" alt="A">
+                    <div class="mask">
+                        <h2>A</h2>
+                        <p>The Serious one who comes across as steady dedicated follower </p>
+                    </div>
+                </div>
+                <div class="clearFloats"></div>
+            </div>
+            <br>
+            <form action="interact.html#join">
+                <input type="submit" value="Join the Mumbai team">
+            </form>
+            <br><br><br>
+
+
+            <hr>
+
+
+            <div class="fullWidthDivAutoSpacing">
+                <h5>Bangalore</h5>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/n.jpg" alt="N">
+                    <div class="mask">
+                        <h2>N</h2>
+                        <p>The founding Tech-Wiz with an analytical mind and an understanding heart</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/S.jpg" alt="S">
+                    <div class="mask">
+                        <h2>S</h2>
+                        <p>The hard-working activist and an ever present conscience</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/P.jpg" alt="P">
+                    <div class="mask">
+                        <h2>P</h2>
+                        <p>The motivator, nurturer and bonding force in our team</p>
+                    </div>
+                </div>                    
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/M.jpg" alt="M">
+                    <div class="mask">
+                        <h2>M</h2>
+                        <p>The one bounding with enthusiasm, she's got a spirit you just cannot ignore</p>
+                    </div>
+                </div>
+
+                <div class="clearFloats"></div>
+            </div>
+
+            <br>
+            <form action="interact.html#join">
+                <input type="submit" value="Join the Bangalore team">
+            </form>
+            <br><br><br>            
+
+            
+            
+            <hr>
+            
+
+            
+            <div class="fullWidthDivAutoSpacing">
+                <h5>Delhi</h5>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/A.jpg" alt="A">
+                    <div class="mask">
+                        <h2>A</h2>
+                        <p>The Determined, Focused and Systematic one</p>
+                    </div>
+                </div>
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/M.jpg" alt="M">
+                    <div class="mask">
+                        <h2>M</h2>
+                        <p>The Energy tank, Enthusiastic and raring to go</p>
+                    </div>
+                </div>
+
+                <div class="textOnImageHover textOnImageHover-technique3">
+                    <img class="imageDimension" src="img/team/N.jpg" alt="N">
+                    <div class="mask">
+                        <h2>N</h2>
+                        <p>The Sweet and Sombre one always willing to help</p>
+                    </div>
+                </div>
+
+                <div class="clearFloats"></div>
+            </div>
+
+            <br>
+            <form action="interact.html#join">
+                <input type="submit" value="Join the Delhi team">
+            </form>
+            <br><br><br>
+
+        </div>
+        <div class="clearFloats"></div>
+
+    </div>
+
+</body>
 </html>

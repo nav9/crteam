@@ -1,92 +1,66 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>CRTeam</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <!--______________ CSS ______________-->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/textOnImageHover.css"> <!-- Resource style -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>SHelping</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <!--______________ CSS ______________-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/shelping.css">
 
-        <!--______________ JavaScript ______________-->
-        <script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="js/lib/d3.v3.js"></script>
-    </head>
+    <!--______________ JavaScript ______________-->
+    <script src="js/updateBrowserNotification.js"></script>        
+    <!--<script src="js/lib/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
+    <!--<script src="js/lib/d3.v3.js"></script>-->
+</head>
 
 
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<body>
+
+    <div id="page-wrap">
+        <div id="mainmenu">
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='mumbai.html'>Mumbai</a></li>
+                <li><a href='bangalore.html'>Bangalore</a></li>
+                <li><a href='delhi.html'>Delhi</a></li>
+                <li class='active'><a href='shelp.html'>S-Help</a></li>
+                <li><a href='team.html'>Team</a></li>
+                <li><a href='crheroes.html'>CR Heroes</a></li>
+                <li><a id="interactmenu" href='interact.html'>Interact</a></li>
+            </ul>
+            <a href='index.html'><img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo"></a>
+        </div>          
 
 
-        <div id="page-wrap">
-            <div id="mainmenu">
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='team.html'>Team</a></li>
-                    <li><a href='mumbai.html'>Mumbai</a></li>
-                    <li><a href='bangalore.html'>Bangalore</a></li>
-                    <li class='active'><a href='shelp.html'>S-Help</a></li>
-                    <li><a id="joinmenu" href='join.html'>Join</a></li>
-                </ul>
-                <img id="teamLogo" class="rotateit" src="img/invertedCRLogo.png" alt="team logo">
-            </div>          
-
-
-
-            <div>
-                <div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/mahendranarang.jpg">
-                        <div class="mask">
-                            <h2>Mahendra Narang</h2>
-                            <p>The Prince Charming of the team. Loves Ekata Kapoor dialogues</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/navinipe.jpg">
-                        <div class="mask">
-                            <h2>Navin Ipe</h2>
-                            <p>Knowledgeable on volunteering, so gives everyone lectures on volunteering responsibly</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/noPhoto.jpg">
-                        <div class="mask">
-                            <h2>XYZ</h2>
-                            <p>Blah blah</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="view view-third">
-                        <img class="imageDimension" src="img/team/noPhoto.jpg">
-                        <div class="mask">
-                            <h2>ABC</h2>
-                            <p>Blah blah</p>
-                            <a href="#" class="info">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="clearFloats"></div>
-
+        <div class="fullWidthDivAutoSpacing">
+            <h6>ONLINE SHOPPING FROM CRTEAM</h6>
+            <p>S-Help stands for "Social Helping". </p>
+            <p>We will soon bring you a page showcasing a range of products 
+                created by some very industrious people from the National Association for the Blind, Adapt, Summanahalli and so on.
+                You will be able to choose the products you wish to buy right from the comfort of your PC.</p>
         </div>
+		
+        <div class="container">
+			<!-- columns should be the immediate child of a .row -->
+			<div class="row">
+				<div class="twelve columns giveSpacingTopAndBottom">
+				<img src="img/shelping_sample.png" alt="S-Helping sample">
+				</div>
+			</div>
+		</div>
+		
+		<!--<div id='shelpingSampleImage'  class="fullWidthDivAutoSpacing">
+            <img src="img/shelping_sample.png" alt="S-Helping sample">
+        </div>-->
 
-    </body>
+        <div class="clearFloats"></div>
+
+    </div>
+
+</body>
 </html>

@@ -4,21 +4,9 @@ CRTeam's very own website. Of the volunteers, by the volunteers and for everyone
 ATTRIBUTIONS FOR SOME AWESOME OPEN SOURCE CODE !!!
 
 ============ Interactive web ===============
-The interactive web (experience) was likely created by the following person:
-          (    (    (                             
-     (    )\ ) )\ ) )\ )           )          (   
-     )\  (()/((()/((()/(     )  ( /(          )\  
-   (((_)  /(_))/(_))/(_)) ( /(  )\())     (  ((_) 
-   )\___ (_)) (_)) (_))   )(_))((_)\      )\  _   
-  ((/ __|/ __|/ __|| |   ((_)_ | |(_)    ((_)| |  
-   | (__ \__ \\__ \| |__ / _` || '_ \ _ / _| | |  
-    \___||___/|___/|____|\__,_||_.__/(_)\__| |_|  
-  
-  L A B O R A T O R I O   D E   I D E A S   W E B
-  
-    @ 2 0 1 4 ~ ∞   |   J o r g e   E p u ñ a n
+The interactive web (experience) was likely created by Jorge Epuñan.
 
-Jorge Epunan has released a lot of projects under the MIT license, so this code
+Jorge Epuñan has released a lot of projects under the MIT license, so this code
 is also assumed to be under MIT: http://opensource.org/licenses/MIT
 With no contact details provided, no specific permissions were obtained for the 
 reuse of the code. But due attribution is hereby given for an awesome piece of
@@ -107,3 +95,20 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
+============ Browser update notification =============
+
+browser-update.org notification script, <browser-update.org>
+Copyright (c) 2007-2015, MIT Style License <browser-update.org/LICENSE.txt>
+It is RECOMMEDED to directly link to this file and not to use a local copy
+because we update and maintain the detection code
+
+
+============ Fonts =============
+
+Free fonts from FontSquirrel http://www.fontsquirrel.com
+
+
+============ Image Slider =============
+
+Free slider from http://www.jssor.com/demos/image-gallery-with-vertical-thumbnail.html

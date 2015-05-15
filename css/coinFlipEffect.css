@@ -1,0 +1,176 @@
+/*---------- Including custom fonts ----------*/
+/* These fonts have to be present in the local directory */
+@font-face { font-family: RobotoCondensed-Regular; src: url('../font/RobotoCondensed-Regular.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('../font/Roboto-Regular.ttf'); }
+@font-face { font-family: Roboto-Black; src: url('../font/Roboto-Black.ttf'); }
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.ch-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.ch-info .ch-info-front {
+	box-shadow: inset 0 0 0 16px rgba(50,50,50,0.3);
+}
+
+.ch-info .ch-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background: rgb(50,50,50);
+	opacity: 0;
+}
+
+.ch-img-1 { 
+    background-image: url("../img/eventLandingPics/BloodDonation.png");
+    z-index: 6;
+}
+
+.ch-img-2 { 
+    background-image: url(../img/eventLandingPics/ADAPT.png);
+    z-index: 7;
+}
+
+.ch-img-3 { 
+    background-image: url(../img/eventLandingPics/NAB.png);
+    z-index: 8;
+}
+
+.ch-img-4 { 
+    background-image: url(../img/eventLandingPics/Plantationdrive.png);
+    z-index: 9;
+}
+
+.ch-img-5 { 
+    background-image: url(../img/eventLandingPics/VastraSamman.png);
+    z-index: 10;
+}
+
+.ch-img-6 { 
+    background-image: url(../img/eventLandingPics/BookDonation.png);
+    z-index: 11;
+}
+
+.ch-img-7{ 
+    background-image: url(../img/eventLandingPics/Jawhar.png);
+    z-index: 12;
+}
+
+.ch-img-8 { 
+    background-image: url(../img/eventLandingPics/Other.png);
+    z-index: 13;
+}
+
+
+.ch-img-9{ 
+	background-image: url(../img/eventLandingPics/Education.png);
+	z-index: 14;
+}
+.ch-img-10{ 
+	background-image: url(../img/eventLandingPics/HomeVisit.png);
+	z-index: 14;
+}
+.ch-img-11{ 
+	background-image: url(../img/eventLandingPics/Volunteering.png);
+	z-index: 14;
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 0 15px;
+	padding: 60px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	/*text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);*/
+}
+
+.ch-info p {
+	color: #fff;
+	background-color: rgb(50,50,50); /*sets the background colour for Read More*/
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	/*border-top: 1px solid rgba(255,255,255,0.5);*/   /*This line show border between event name and Read More*/
+}
+
+.ch-info p a {
+	display: block;
+	background-color: rgb(50,50,50); /*sets the background colour for Read More*/
+	color: rgb(50,50,50);   /*color: #fff;*/
+	color: rgba(255,255,255,0.7); /*This line give the colour to Read More when not hovered*/
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	text-align: center;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8); /*This line give the colour to Read More when hovered*/
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}

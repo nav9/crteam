@@ -1,0 +1,14 @@
+
+.browserupgrade {
+    background: #fff;
+    color: #111;
+	padding-left: 10px;
+	font-size: 20px;
+}
+.additionalMessage
+{
+    background: rgb(241,211,3);
+    color: #111;
+	padding-left: 10px;
+	font-size: 10px;
+}

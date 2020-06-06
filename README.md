@@ -1,4 +1,4 @@
-CRTeam's very own website. Of the volunteers, by the volunteers and for everyone!
+The Employee Volunteering team's very own website. Of the volunteers, by the volunteers and for everyone!
 
 
 ATTRIBUTIONS FOR SOME AWESOME OPEN SOURCE CODE !!!
